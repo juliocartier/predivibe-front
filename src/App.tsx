@@ -3,20 +3,8 @@ import { Activity, CheckCircle, AlertTriangle, AlertOctagon, Cpu, Bell, Settings
 import { VibrationChart } from './components/VibrationChart';
 import { MotorsList } from './components/MotorsList';
 import { AlarmPanel } from './components/AlarmPanel';
-import type { ChartData, Alert, Motor } from './types';
+import type { Alert, Motor } from './types';
 
-const MOCK_CHART_DATA: ChartData[] = [
-  { time: '08:00', vibration: 2.1, baseline: 2.0 },
-  { time: '08:01', vibration: 2.3, baseline: 2.0 },
-  { time: '08:02', vibration: 2.2, baseline: 2.0 },
-  { time: '08:03', vibration: 2.5, baseline: 2.0 },
-  { time: '08:04', vibration: 2.1, baseline: 2.0 },
-  { time: '08:05', vibration: 3.8, baseline: 2.0 },
-  { time: '08:06', vibration: 5.4, baseline: 2.0 },
-  { time: '08:07', vibration: 8.2, baseline: 2.0 },
-  { time: '08:08', vibration: 7.9, baseline: 2.0 },
-  { time: '08:09', vibration: 8.5, baseline: 2.0 },
-];
 
 const MOCK_ALERTS: Alert[] = [
   { id: 1, motor: 'Motor C3 - Exaustor Principal', level: 'critical', message: 'Vibração excessiva detectada (8.5 mm/s).', aiDiagnosis: 'Desgaste de rolamento interno (94% de confiança).', time: 'Há 2 minutos' },
