@@ -119,7 +119,8 @@ export default function App() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <VibrationChart data={MOCK_CHART_DATA} />
+          {/* APENAS A TAG FECHADA, SEM DATA */}
+          <VibrationChart />
           <MotorsList motors={MOCK_MOTORS} />
         </div>
 
